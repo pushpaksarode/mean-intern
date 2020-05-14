@@ -1,0 +1,71 @@
+.container {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    /* border: 2px solid black; */
+    margin: 10px auto;
+}
+
+.part1 {
+    position: absolute;
+    width: 250px;
+    height: 700px;
+    box-sizing: border-box;
+    background-image: url('19874.jpg');
+    /* opacity: 0.9; */
+}
+
+.part2{
+    height:700px;
+    position:absolute;
+    left:250px;
+    padding:0px 10px;
+    color:white;
+    font-family: 'open sans','Exo 2';
+    background-image: linear-gradient(to left,#1a0d00,#330000,#1a0d00);
+    font-size:14px;
+    letter-spacing: 1px;
+}
+
+.container .part1 #mypic {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    top: 45px;
+    left: 45px;
+    border: 2px solid black;
+}
+
+.details {
+    position: absolute;
+    top: 250px;
+    font-size: 15px;
+    color: white;
+    font-family: 'open sans'
+}
+
+.details p {
+    padding: 10px 15px;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    filter: invert(100%)
+}
+.info h1{
+    width:270px;
+    text-align:center;
+    margin:10px 30px;
+}
+button{
+    margin-top:10px;
+}
+#mymail{
+    color:whitesmoke;
+}
+button a{
+    text-decoration:none;
+}

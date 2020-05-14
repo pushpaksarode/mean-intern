@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Exo+2:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            position: relative;
+            width: 600px;
+            height: 700px;
+            /* border: 2px solid black; */
+            margin: 10px auto;
+        }
+
+        .part1 {
+            position: absolute;
+            width: 250px;
+            height: 700px;
+            box-sizing: border-box;
+            background-image: url('19874.jpg');
+            /* opacity: 0.9; */
+        }
+        
+        .part2{
+            height:700px;
+            position:absolute;
+            left:250px;
+            padding:0px 10px;
+            color:white;
+            font-family: 'open sans','Exo 2';
+            background-image: linear-gradient(to left,#1a0d00,#330000,#1a0d00);
+            font-size:14px;
+            letter-spacing: 1px;
+        }
+
+        .container .part1 #mypic {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            border-radius: 50%;
+            top: 45px;
+            left: 45px;
+            border: 2px solid black;
+        }
+
+        .details {
+            position: absolute;
+            top: 250px;
+            font-size: 15px;
+            color: white;
+            font-family: 'open sans'
+        }
+
+        .details p {
+            padding: 10px 15px;
+        }
+
+        .logo {
+            width: 20px;
+            height: 20px;
+            float: left;
+            filter: invert(100%)
+        }
+        .info h1{
+            width:270px;
+            text-align:center;
+            margin:10px 30px;
+        }
+        button{
+            margin-top:10px;
+        }
+        #mymail{
+            color:whitesmoke;
+        }
+        button a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="part1">
+            <img id="mypic" src="IMG_20200422_195747.jpg">
+            <div class="details">
+                <p><img class="logo" src="location.png">&nbsp;02 , Adarsh Nagar , Borgad , Nashik -
+                    422004<br>Maharashtra</p>
+                <p><img class="logo" src="call.png">&nbsp;+917083513068</p>
+                <p><img class="logo" src="mail.png">&nbsppushpak.sarode01@gmail.com"</p>
+                <p><img class="logo" src="website.png">&nbsp;pushpaksarode.github.io</p>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="info">
+                <h1>Pushpak Sarode</h1>
+                <hr>
+                <b>Skilled in these Programming Languages</b>
+
+                <ol style="list-style-position: inside;">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>PL/SQL</li>
+                    <li>VB6</li>
+                </ol>
+
+                <b>Foundation of Computer Subjects like</b>
+
+                <ul>
+                    <li>Database Management System</li>
+                    <li>Operating System</li>
+                    <li>Networking</li>
+                    <li>Object Oriented Software Engineering</li>
+
+                </ul>
+            </div>
+            <hr>
+
+
+            <h3>Personal Details</h3>
+
+            <p>Name : Pushpak Shashikant Sarode<br>
+                DOB : 01-SEPT-2000<br>
+                Religion : Hindu<br>
+                Nationality : Indian<br>
+                Address : Nashik - 422004<br>
+                Contact No : 7083513068<br>
+                Email : <a id="mymail" href="mailto:pushpak.sarode01@gmail.com">pushpak.sarode01@gmail.com</a>
+            </p>
+            <hr>
+
+
+
+            <h3>Education Details</h3>
+            Student of BCA at CMCS College , Nashik<br>
+            SY Percentage : 84.60
+            <hr>
+
+            <center><button>
+                <a href="form.html" target="_blank"><b>Click Me</b></a>
+            </button></center>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
