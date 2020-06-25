@@ -1,0 +1,45 @@
+.container>.row{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#main-card{
+    background-color:rgb(228, 228, 228);
+    padding-top: 30px;
+    padding-bottom: 30px;;
+    border-radius:10px;
+}
+#main-card:hover{
+    box-shadow: 0px 0px 5px blue;
+}
+#logo{
+    text-align: center;
+}
+#logo img{
+    border-radius: 50%;
+}
+#sign-up-header{
+    text-align: center;
+}
+#sign-up-header h2{
+    font-family: 'ubuntu';
+}
+.label-group{
+   
+}
+.input-data{
+    margin:5px 10px;
+    border:1px solid black;
+    padding-left:5px;
+    padding-right:5px;
+    width:250px;
+}
+.input-data:hover{
+    background-color: rgb(250, 239, 218);
+}
+.input-group{
+    
+}
+.sign-up-div,.sign-in-div{
+    text-align: center;
+    margin-top:20px;
+}

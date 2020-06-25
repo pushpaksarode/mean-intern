@@ -1,0 +1,155 @@
+
+Main Navbar
+
+nav{
+    padding:5px;
+}
+li{
+    font-size: 18px;
+    padding:5px;
+}
+.bg-black{
+    background-color:rgb(16, 19, 19)
+}
+.logo a{
+    text-decoration: none;
+    color:white;
+}
+.logo h6{
+    font-family: cursive;
+}
+.company_logo{
+    height:35px;
+    width:35px;
+}
+.navbar-brand{
+    margin-left:20px;
+    text-align:center;
+}
+.navbar-brand h4{
+    font-family: 'ubuntu';
+    font-size:18px;
+    margin-bottom: 0px;
+    padding:5px;
+}
+.navbar-brand h6{
+    padding-top:0px;
+    font-size: 8px;
+}
+.navbar-toggler{
+    background-color:rgb(41, 49, 49)
+}
+.topSearchBar input,.topSearchBar button{
+    background-color: black;
+    color:white;
+}
+/* Botton & Inputbox */ 
+
+.checkService{
+    margin-left:10px;
+}
+.checkService input,.checkService button{
+    display:inline-block;
+}
+.searchBox{
+    height:32px;
+    width:150px;
+}
+.searchBtn{
+    width:30px;
+    height:30px;
+    border-style: none;
+}
+.navRightDiv{
+    display:inline-block;
+}
+.myCart{
+    border-radius: 10px;
+    margin:0px 40px;
+    width:40px;
+    height: 25px;
+    text-align: center;
+}
+.myCart a{
+    color: black;
+}
+.myCart:hover{
+    background-color:whitesmoke;
+}
+.myCart:active{
+    background-color: rgb(201, 200, 200);
+}
+
+/* Small Navbar */ 
+
+.noticebar{
+    display: inline-block;
+    width:65%;
+    height:50px;
+    background-color: rgb(255, 185, 79);
+    border-bottom: 1px solid black;
+    border-top: 1px solid greenyellow;  
+}
+
+.controlBtn{
+    /* background-color: darkseagreen; */ 
+    padding:7px 10px;
+    vertical-align: top;
+    display:inline-block;
+    width:35%;
+    height:50px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid greenyellow; 
+}
+.noticebar marquee{
+    padding:10px;
+}
+.controlBtn span{
+    padding:0px 15px;
+}
+.btn{
+    border-radius: 5px;;
+}
+#loginBtn:hover,#signupBtn:hover{
+    background-color: rgb(44, 44, 44);
+    color:white;
+}
+
+.containerBtn button{
+    border:1px solid black;
+}
+
+.checkService{
+    display:inline-block;
+}
+
+@media only screen and (max-width:414px){
+    #loginBtn{
+        font-size:12px;
+        padding:3px;
+    }
+    #signupBtn{
+        font-size:12px;
+    }
+    .controlBtn span{
+        padding:0px 5px;
+    }
+
+}
+
+
+
+
+/* after upgrading */
+
+li a{
+    cursor: pointer;
+}
+
+#admin_panel{
+    border: 1px solid white;
+}
+
+#admin_panel:hover{
+    background-color: rgb(8, 68, 68);
+}

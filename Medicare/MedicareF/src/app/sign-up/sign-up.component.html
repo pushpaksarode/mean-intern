@@ -1,0 +1,49 @@
+<form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value,postForm)">
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" id="main-card">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4" id="logo">
+                    <img width="100px" height="100px" src="./assets/company_name.png">       
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row" id="sign-up-header">
+                <div class="col-12"><h2>Sign Up</h2></div>
+                <div class="col-12">
+                    <label for="firstname">Firstname : </label>
+                    <input class="input-data" ngModel type="text" name="firstname" id="firstname" placeholder="Enter Firstname">
+                </div>
+                <div class="col-12">
+                    <label for="lastname">Lastname : </label>
+                    <input class="input-data" ngModel type="text" name="lastname" id="lastname" placeholder="Enter Lastname">
+                </div>
+                <div class="col-12">
+                    <label for="address">&nbsp;&nbsp;Address : </label>
+                    <input class="input-data" ngModel type="text" name="address" id="address" placeholder="Enter Address">
+                </div>
+                <div class="col-12">
+                    <label for="username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email : </label>
+                    <input class="input-data" ngModel type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <div class="col-12">
+                    <label for="password">Password : </label>
+                    <input class="input-data" ngModel type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 sign-up-div">
+                    <button type="submit" class="btn btn-outline-success btn-sm">Sign Up</button>
+                </div>
+                <div class="col-12 sign-in-div">
+                    <a routerLink="/login"><button class="btn btn-outline-danger btn-sm">Login</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</form>
+

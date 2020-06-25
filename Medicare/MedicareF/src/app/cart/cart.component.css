@@ -1,0 +1,9 @@
+.company-logo-div{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#company-logo{
+    width:140px;
+    height:40px;   
+    border-radius: 15px;
+}

@@ -1,0 +1,37 @@
+#product-path{
+    padding:10px 10px;
+}
+#main-card{
+    background-color: rgb(236, 238, 243);
+}
+.main-3-cards{
+    padding:10px;
+}
+#main-product-img{
+    max-width: 100%;
+}
+.buy-card{
+    margin:5px;
+    border:1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px black;
+    text-align: center;
+}
+select{
+    height:25px;
+    width: 35px;
+    padding: 2px;
+    font-size:12px;
+    border-radius: 5px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.add-cart-btn{
+    margin-top:20px;
+    margin-bottom:20px;
+    color: black;
+    border: 2px solid rgb(255, 145, 0);
+}
+.add-cart-btn:hover{
+    background-image: linear-gradient(to left,rgba(255, 230, 0, 0.930), rgb(255, 230, 0),rgba(255, 230, 0, 0.930));
+}

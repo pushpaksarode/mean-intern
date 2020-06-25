@@ -1,0 +1,41 @@
+.container>.row{
+    margin-top:70px;
+    margin-bottom: 70px;
+}
+#main-card{
+    background-color: rgb(228, 228, 228);
+    padding-top: 30px;
+    padding-bottom: 30px;;
+    border-radius:10px;
+}
+#main-card:hover{
+    box-shadow: 0px 0px 5px blue;
+}
+#logo{
+    text-align: center;
+}
+#logo img{
+    border-radius: 50%;
+}
+#login-header{
+    text-align: center;
+}
+#login-header h2{
+    font-family: 'ubuntu';
+}
+.input-data{
+    margin:5px 0px;
+    border:1px solid black;
+    /* padding-left:5px;
+    padding-right:5px; */
+    padding:7px;
+    width:250px;
+    border-radius: 5px;
+}
+.input-data:hover{
+    background-color: rgb(250, 239, 218);
+}
+.login-div,.signup-div{
+    text-align: center;
+    margin-top:20px;
+}

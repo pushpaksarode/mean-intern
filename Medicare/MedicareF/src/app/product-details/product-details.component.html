@@ -1,0 +1,159 @@
+<div class="container">
+    <div class="row" id="product-path">Ayurveda > Dabur Honey</div>
+    <div class="row" id="main-card">
+        <div class="col-5 main-3-cards">
+            <img src="http://localhost:3005/{{products.productImagePath}}" id="main-product-img" alt="{{products.name}}">
+        </div>
+        <div class="col-5 main-3-cards">
+            <div class="row">
+                <div class="col-12">
+                    <h3>{{products.name}}</h3>
+                </div>
+                <div class="col-12">
+                    <h6>{{products.info}}</h6>
+                </div>
+                <div class="col-12">
+                    <h6>Category : {{products.category.name}}</h6>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h5>M.R.P. : <del>&#8377; {{products.mrp}}</del></h5>
+                </div>
+                <div class="col-12">
+                    <h5>Best Price : &#8377; {{products.price}}</h5>
+                </div>
+                <div class="col-12">
+                    <h5>16.66 % OFF</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h6>Description : </h6>
+                </div>
+                <div class="col-12">
+                    <p>
+                        {{products.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 main-3-cards">
+            <div class="row buy-card">
+                <div class="col-12">
+                    <span>Quantity : 
+                        <select name="qty" id="qty" #ingre_qty>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </span>
+                </div>
+                <hr><hr>
+                <div class="col-12">
+                    <button (click)="addTocart()" class="btn btn-sm btn-outline-warning add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row" id="product-path">Ayurveda > Dabur Honey</div>
+    <div class="row" id="main-card">
+        <div class="col-5 main-3-cards">
+            <img src="./assets/dabur_honey.jpg" id="main-product-img" alt="dabur_honey">
+        </div>
+        <div class="col-5 main-3-cards">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Dabur Honey</h3>
+                </div>
+                <div class="col-12">
+                    <h6>India's No.1 Honey -250g + Get 30% Extra</h6>
+                </div>
+                <div class="col-12">
+                    <h6>Ayurveda</h6>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h5>M.R.P. : <del>&#8377; 180</del></h5>
+                </div>
+                <div class="col-12">
+                    <h5>Best Price : &#8377; 150</h5>
+                </div>
+                <div class="col-12">
+                    <h5>16.66 % OFF</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h6>Description : </h6>
+                </div>
+                <div class="col-12">
+                    <p>&#8226; One tablespoon of Dabur honey with warm water daily morning will help you in managing
+                        weight and reducing one size in 90 days (clinically tested)
+                        <br>
+                        &#8226; Picking up Dabur Honey means that you get 100% purity guarantee
+                        Dabur honey is rich in antioxidants and hence will help in strengthening your immunity
+                        <br>
+                        &#8226; Daily use of Dabur Honey with warm water in morning is proved to be good for heart
+                        health
+                        <br>
+                        &#8226; Dabur honey is a rich souce of nutrition for you and your family
+                        <br>
+                        &#8226; Dabur honey when mixed with ginger and other household ingredients is a great remedy for
+                        cough & cold
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 main-3-cards">
+            <div class="row buy-card">
+                <div class="col-12">
+                    <span>Quantity : 
+                        <select name="qty" id="qty">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </span>
+                </div>
+                <hr><hr>
+                <div class="col-12">
+                    <button class="btn btn-sm btn-outline-warning add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

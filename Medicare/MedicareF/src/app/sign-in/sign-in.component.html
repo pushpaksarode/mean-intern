@@ -1,0 +1,36 @@
+<form #myform="ngForm" (submit)="loginClicked(myform)">
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" id="main-card">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4" id="logo">
+                    <img width="100px" height="100px" src="./assets/company_name.png">       
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row" id="login-header">
+                <div class="col-12"><h2>Login</h2></div>
+                <div class="col-12">
+                    <input class="input-data" type="email" name="email" ngModel placeholder="Username">
+                </div>
+                <div class="col-12">
+                    <input class="input-data" type="password" name="password" ngModel placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 login-div">
+                    <button type="submit" class="btn btn-outline-success btn-sm">Login</button>
+                </div>
+                <div class="col-12 signup-div">
+                    <a routerLink="/signup"><button class="btn btn-outline-danger btn-sm">Sign Up</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+</form>

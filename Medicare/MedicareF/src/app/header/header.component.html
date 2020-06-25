@@ -1,0 +1,204 @@
+<!-- navbar -->
+<div class="mybar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-black">
+    <a class="navbar-brand text-white" href="#">
+      <div class="logo">
+        <a routerLink="/main">
+          <img class="company_logo" src="assets/company_logo.png">
+          <h4>Medicare</h4>
+          <h6>Be fearless</h6>
+        </a>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+
+      <ul class="navbar-nav ml-auto">
+
+
+        <li class="nav-item active">
+          <button id="admin_panel" class="btn success text-white" *ngIf="!isAdmin" routerLink="/main">Admin Panel</button>
+        </li>
+
+
+        <li class="nav-item active">
+          <a style="color:white" class="nav-link" *ngIf="session_set" routerLink="/main">Welcome <strong>{{username}}</strong></a>
+        </li>
+
+
+        <li class="nav-item active">
+          <a class="nav-link text-white" routerLink="/main">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-dark" href="#" *ngFor="let i of category">{{i.name}}</a>
+          </div>
+        </li>
+
+
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Coronavirus Preventions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-dark" href="#">Masks</a>
+            <a class="dropdown-item text-dark" href="#">Sanitizer</a>
+            <a class="dropdown-item text-dark" href="#">Handwashes</a>
+            <a class="dropdown-item text-dark" href="#">Boost Your Immunity</a>
+          </div> 
+        </li> -->
+
+        
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/about-us">About Us</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link text-white" routerLink="/contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" *ngIf="!session_set" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" *ngIf="!session_set" routerLink="/signup">Sign Up</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" *ngIf="session_set" (click)="logout()">Logout </a>
+        </li>
+      
+      </ul>
+
+
+      <!-- Search Box -->
+      <!-- <form class="form-inline my-2 my-lg-0 topSearchBar">
+        <input class="form-control mr-sm-2 searchBox" type="search" placeholder="Search" aria-label="Search">
+        <button class="searchBtn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form> -->
+
+
+    </div>
+  </nav>
+</div>
+
+
+
+<div class="noticebar">
+  <marquee width="100%" direction="left">Feel free to connect to us for any assistance or consulting during the lockdown
+    , Shipment may be delayed due to Covid-19 lockdown
+  </marquee>
+</div>
+
+
+<div class="controlBtn">
+
+  <div class="checkService navRightDiv">
+    <input class="form-control mr-sm-2 searchBox" type="text" name="pincode" id="pincode" placeholder="Pincode">
+    <button class="searchBtn">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="myCart navRightDiv">
+    <a routerLink="/cart">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </a>
+  </div>
+
+
+  <!-- <div class="containerBtn navRightDiv">
+    <a *ngIf="!session_set" routerLink="/login"><button id="loginBtn" class="btn btn-sm">
+        Login
+      </button></a>
+    <span>|</span>
+    <a *ngIf="!session_set" routerLink="/signup"><button id="signupBtn" class="btn btn-sm">
+        Sign Up
+      </button></a>
+ 
+    <a class="nav-link" *ngIf="session_set" routerLink="/main">Welcome {{username}}</a>
+    <a class="nav-link" *ngIf="session_set" (click)="logout()">Logout</a> 
+  </div> -->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------Code By Anuj Sir ------------------------- -->
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/main">
+          <img width="100px"  src="assets/company_logo.png" alt="">
+    My Shop
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" *ngIf="session_set" routerLink="/main">Welcome <strong>{{username}}</strong></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/main">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Category's
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" *ngFor="let cat of category">{{cat.name}}</a>
+        
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!session_set" routerLink="/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!session_set" routerLink="/signup">Registration</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" *ngIf="session_set" (click)="logout()">Logout </a>
+      </li>
+     
+     
+    </ul>
+    
+  </div>
+</nav> -->
+
+
+
+
+

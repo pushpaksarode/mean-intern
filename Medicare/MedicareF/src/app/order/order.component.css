@@ -1,0 +1,14 @@
+.order-header{
+    padding:15px 15px;
+}
+#order-img-div{
+    text-align: center;
+}
+
+#order-img{
+    max-width: 50%;
+}
+
+#order-id-date{
+    margin-top:20px;
+}
