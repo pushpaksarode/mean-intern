@@ -28,19 +28,12 @@ export class ProductDetailsComponent implements OnInit {
 
     ngOnInit() {
 
-      let id2 = this.route.snapshot.paramMap.get('id');
-
-      
+      let id2 = this.route.snapshot.paramMap.get('id'); 
 
       this.http.get/*<{[key:string]:Product}>*/("http://localhost:3005/api/product/"+id2).subscribe(posts =>{
         console.log("array"+posts);
-  
        this.products = posts;
-
-     })
-   
-    ;
-     
+      });
     }
 
 

@@ -137,7 +137,7 @@
                         <td class="align-middle text-center">{{i.product_count}}</td>
                         <td class="align-middle text-center">&#8377; {{i.product_price}}</td>
                         <td class="align-middle text-center">&#8377; {{i.product_count * i.product_price }}</td>
-                        <td class="align-middle text-center"><button class="btn btn-warning btn-sm">&#10060;</button></td>
+                        <td class="align-middle text-center"><button (click)="deleteCart(m)" class="btn btn-warning btn-sm">&#10060;</button></td>
                     </tr>
                     <tr *ngIf="cart.length === 0">
                         <th class="text-center" colspan="7">

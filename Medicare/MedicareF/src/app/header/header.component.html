@@ -23,12 +23,14 @@
 
 
         <li class="nav-item active">
-          <button id="admin_panel" class="btn success text-white" *ngIf="!isAdmin" routerLink="/main">Admin Panel</button>
+          <button id="admin_panel" class="btn success text-white" *ngIf="!isAdmin" routerLink="/main">Admin
+            Panel</button>
         </li>
 
 
         <li class="nav-item active">
-          <a style="color:white" class="nav-link" *ngIf="session_set" routerLink="/main">Welcome <strong>{{username}}</strong></a>
+          <a style="color:white" class="nav-link" *ngIf="session_set" routerLink="/main">Welcome
+            <strong>{{username}}</strong></a>
         </li>
 
 
@@ -43,7 +45,11 @@
             Category
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-dark" href="#" *ngFor="let i of category">{{i.name}}</a>
+            <a class="dropdown-item text-dark" href="#" *ngFor="let i of category">
+              <a routerLink="/cat/{{i._id}}">
+                {{i.name}}
+              </a>
+            </a>
           </div>
         </li>
 
@@ -61,7 +67,7 @@
           </div> 
         </li> -->
 
-        
+
         <li class="nav-item">
           <a class="nav-link text-white" routerLink="/services">Services</a>
         </li>
@@ -80,7 +86,7 @@
         <li class="nav-item active">
           <a class="nav-link text-white" *ngIf="session_set" (click)="logout()">Logout </a>
         </li>
-      
+
       </ul>
 
 
@@ -197,8 +203,3 @@
     
   </div>
 </nav> -->
-
-
-
-
-

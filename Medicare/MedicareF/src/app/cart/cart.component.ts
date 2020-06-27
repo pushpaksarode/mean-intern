@@ -32,6 +32,8 @@ export class CartComponent implements OnInit {
     }
 
   }
+
+
   deleteCart(index:number)
   {
     this.cartSer.deleteCart(index);
@@ -39,7 +41,6 @@ export class CartComponent implements OnInit {
   }
 
   
-
   placeOrder2()
   {
     
@@ -50,9 +51,9 @@ export class CartComponent implements OnInit {
     }
   
      let products2:Order[];
-
+     this.total_amount = this.final_total + (this.final_total / 100 * 3);
     products2 = this.newOrde.getOrder();
-  let  amount = this.final_total;
+  let  amount = this.total_amount;
   let  address = "Dombivli";
   let    user = "5ec43ca535a864729c349517";
 

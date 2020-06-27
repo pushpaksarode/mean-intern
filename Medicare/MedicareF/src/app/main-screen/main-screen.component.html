@@ -60,7 +60,7 @@
     <h1>Products</h1>
 
     <div> 
-        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ayurveda</h3>   
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{categoryDetails.name}}</h3>   
     </div>
     
     
@@ -69,7 +69,6 @@
 
         <div class="col-lg-2 col-md-5 col-sm-2 product" *ngFor="let i of products">
             <a routerLink="/product-detail/{{i._id}}">
-            <!-- <img class="product_image" src="assets/{{i.imagePath}}" alt=""> -->
             <img class="product_image" src="http://localhost:3005/{{i.productImagePath}}" alt="">
             <h5>{{i.name}}</h5>
             <p>{{i.info}}</p>

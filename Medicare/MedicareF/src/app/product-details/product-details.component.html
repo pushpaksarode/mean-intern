@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row" id="product-path">Ayurveda > Dabur Honey</div>
+    <div class="row" id="product-path"><a routerLink="/cat/{{products.category._id}}">{{products.category.name}}&nbsp;</a> > {{products.name}}</div>
     <div class="row" id="main-card">
         <div class="col-5 main-3-cards">
             <img src="http://localhost:3005/{{products.productImagePath}}" id="main-product-img" alt="{{products.name}}">

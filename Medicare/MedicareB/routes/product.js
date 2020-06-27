@@ -21,13 +21,16 @@ const {
   updateProduct,
   deleteProduct,
   getAllProducts,
-  getAllUniqueCategories
+  getAllUniqueCategories,
+  getAllProductByCategory,
+  getAllProductsByCategory
 } = require("../controllers/product");
+const category = require("../models/category");
 
 
 // all of params
 router.param("productId", getProductById);
-
+router.param("categoryId", getAllProductByCategory);
 
 // create product
 router.post(
@@ -58,13 +61,19 @@ router.delete(
 );
 
 
-// Update Product
+// update Product
 router.put(
   "/product/:productId",
   upload.single('productImage'),
   updateProduct
 );
 
+
+// get all product by category
+router.get(
+  "/cat/:categoryId",
+  getAllProductsByCategory
+)
 
 module.exports = router;
 

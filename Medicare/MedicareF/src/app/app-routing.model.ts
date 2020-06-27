@@ -15,6 +15,7 @@ import { ServicesComponent } from './services/services.component';
 const appRoutes:Routes =[
     {path: '', redirectTo: '/main', pathMatch: 'full' },
     {path:'main',component:MainScreenComponent},
+    {path:'cat/:id',component:MainScreenComponent},
     {path:'product-detail/:id',component:ProductDetailsComponent},
     {path:'login',component:SignInComponent},
     {path:'signup',component:SignUpComponent},

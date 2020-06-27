@@ -115,3 +115,23 @@ exports.updateProduct=(req,res)=>{
       res.json(updatedProduct);
     });
 };
+
+
+// get product by category
+exports.getAllProductByCategory = (req, res, next, id) => {
+  Product.find({category:id}).exec((err, product) => {
+      if (err) {
+        return res.status(400).json({
+          error: "Product not found"
+        });
+      }
+      req.product = product;
+      next();
+    });
+};
+
+
+// get all products by category
+exports.getAllProductsByCategory = (req, res) => {
+  return res.json(req.product);
+};
