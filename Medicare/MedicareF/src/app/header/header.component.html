@@ -83,6 +83,9 @@
         <li class="nav-item">
           <a class="nav-link text-white" *ngIf="!session_set" routerLink="/signup">Sign Up</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" *ngIf="session_set" routerLink="/myorder/{{userid}}">My Orders</a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link text-white" *ngIf="session_set" (click)="logout()">Logout </a>
         </li>

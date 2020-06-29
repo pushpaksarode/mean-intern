@@ -23,7 +23,8 @@ const appRoutes:Routes =[
     {path:'cart',component:CartComponent},
     {path:'about-us',component:AboutUsComponent},
     {path:'contact-us',component:ContactUsComponent},
-    {path:'services',component:ServicesComponent}
+    {path:'services',component:ServicesComponent},
+    {path:'myorder/:id',component:OrderComponent},
 ];
 
 

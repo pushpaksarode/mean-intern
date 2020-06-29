@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
 
   session_set = false;
   isAdmin = true;
+  userid = null;
 
   category: Category[];
 
@@ -29,6 +30,7 @@ export class HeaderComponent implements OnInit {
 
     if (sessionStorage.getItem("user_firstname")) {
       this.username = sessionStorage.getItem("user_firstname");
+      this.userid = sessionStorage.getItem("user_id");
       this.session_set = true;
 
       if ("5ee47ba098d16d36c4407a6d" === (localStorage.getItem("user_id"))) {
@@ -61,16 +63,16 @@ export class HeaderComponent implements OnInit {
   }
 
   logout() {
+    this.userid = null;
     this.user.next(null);
     this.router.navigate(['/login']);
 
-    localStorage.removeItem('userData');
-    localStorage.removeItem('user_email');
-    localStorage.removeItem('user_firstname');
-    localStorage.removeItem('user_lastname');
-    localStorage.removeItem('user_id');
-
+    sessionStorage.removeItem('userData');
+    sessionStorage.removeItem('user_email');
     sessionStorage.removeItem('user_firstname');
+    sessionStorage.removeItem('user_lastname');
+    sessionStorage.removeItem('user_id');
+    sessionStorage.removeItem('user_address');
     this.session_set = false;
   }
 

@@ -10,5 +10,13 @@
 }
 
 #order-id-date{
-    margin-top:20px;
+    color: darkslategrey;
+}
+
+.main-list-box{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+#arrive-date{
+    color: rgb(2, 182, 2);
 }

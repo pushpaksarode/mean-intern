@@ -33,14 +33,13 @@ export class SignInComponent implements OnInit {
 
     this.http.post('http://localhost:3005/api/signin',login).subscribe(responseData => {
       console.log(responseData);
-      
 
-      // if(responseData.user.firstname){
-      //   this.handleAuthentication(responseData.user.email,responseData.user._id,responseData.user.firstname, responseData.user.lastname);
-      //   this.router.navigate(['/main']);
-      // }
+      if(responseData.user.firstname){
+        this.handleAuthentication(responseData.user.email,responseData.user._id,responseData.user.firstname, responseData.user.lastname, responseData.user.address);
+        this.router.navigate(['/main']);
+      }
 
-      this.router.navigate(['/main']);
+      // this.router.navigate(['/main']); 
 
 
     });
@@ -51,20 +50,20 @@ export class SignInComponent implements OnInit {
     email: string,
     userId: string,
     firstname: string,
-    lastname:string
+    lastname:string,
+    address:string
   )
   {
    
-    const user = new Userlogin(email, userId, firstname, lastname);
+    const user = new Userlogin(email, userId, firstname, lastname, address);
     this.user.next(user);
 
-    localStorage.setItem('userData', JSON.stringify(user)); // option 1
-    localStorage.setItem('user_email', email);  // option 2
-    localStorage.setItem('user_firstname', firstname);  // option 3
-    localStorage.setItem('user_lastname', lastname);  // option 4
-    localStorage.setItem('user_id', userId);  // otpion 5
- 
-    sessionStorage.setItem('user_firstname', firstname);
+    sessionStorage.setItem('userData', JSON.stringify(user)); // option 1
+    sessionStorage.setItem('user_email', email);  // option 2
+    sessionStorage.setItem('user_firstname', firstname);  // option 3
+    sessionStorage.setItem('user_lastname', lastname);  // option 4
+    sessionStorage.setItem('user_id', userId);  // otpion 5
+    sessionStorage.setItem('user_address', address);
 
   }
 }

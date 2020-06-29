@@ -6,10 +6,7 @@ export class CartServices
 {
     CartChanged = new EventEmitter<Cart[]>();
     cart : Cart[] =
-  [
-  
-      
-  ];
+  [ ];
 
 
     getcart()
