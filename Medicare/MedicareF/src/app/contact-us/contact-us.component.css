@@ -1,0 +1,18 @@
+.contact-us .row{
+    width: 100vw;
+}
+.contact-us h1{
+    text-align: center;
+    text-shadow: 0px 0px 2px darkslateblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:30px;
+}
+
+.container h2{
+    color: rgb(34, 49, 49);
+    font-family: monospace;
+}
+
+a{
+    color: rgb(37, 33, 65);
+}

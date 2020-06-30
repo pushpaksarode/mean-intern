@@ -8,12 +8,15 @@ const {
   getOrder,
   getAllOrders,
   getOrderStatus,
-  updateStatus
+  updateStatus,
+  getOrderByUserId,
+  getOrdersByUserId
 } = require("../controllers/order");
 
 
 // params
 router.param("orderId",getOrderById);
+router.param("userId",getOrderByUserId);
 
 // create order
 router.post(
@@ -49,5 +52,11 @@ router.delete(
     removeOrder
 );
 
+
+// get order by user id
+router.get(
+    "/myorder/:userId",
+    getOrdersByUserId
+)
 
 module.exports = router;

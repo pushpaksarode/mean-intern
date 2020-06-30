@@ -29,8 +29,6 @@ export class SignInComponent implements OnInit {
 
     const login = { email :email,password:password};
 
-    //alert(password); 
-
     this.http.post('http://localhost:3005/api/signin',login).subscribe(responseData => {
       console.log(responseData);
 
@@ -39,7 +37,7 @@ export class SignInComponent implements OnInit {
         this.router.navigate(['/main']);
       }
 
-      // this.router.navigate(['/main']); 
+      // this.router.navigate(['/main']);
 
 
     });

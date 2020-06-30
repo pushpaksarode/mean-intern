@@ -80,3 +80,23 @@ exports.getOrderById = (req, res, next, id) => {
         next();
       });
 };
+
+
+// get order by user id
+exports.getOrderByUserId = (req, res, next, id) => {
+  Order.find({user:id}).exec((err, order) => {
+      if (err) {
+        return res.status(400).json({
+          error: "NO order found in DB"
+        });
+      } 
+      req.order = order;
+      next();
+    });
+};
+
+
+// get all order by user id
+exports.getOrdersByUserId = (req, res) => {
+  return res.json(req.order);
+};

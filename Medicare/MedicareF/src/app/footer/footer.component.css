@@ -1,7 +1,7 @@
 .container-fluid{
-    padding-top:30px;
+    padding-top:20px;
     padding-bottom: 30px;
-    background-color: rosybrown;
+    background-color: rgb(187, 176, 176);
 }
 
 .footer-header{
@@ -11,6 +11,7 @@
 i{
     margin:20px 20px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .footer-footer{

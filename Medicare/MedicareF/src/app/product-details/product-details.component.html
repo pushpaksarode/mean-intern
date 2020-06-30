@@ -1,10 +1,10 @@
 <div class="container">
     <div class="row" id="product-path"><a routerLink="/cat/{{products.category._id}}">{{products.category.name}}&nbsp;</a> > {{products.name}}</div>
     <div class="row" id="main-card">
-        <div class="col-5 main-3-cards">
+        <div class="col-lg-5 col-md-6 col-sm-6 main-3-cards">
             <img src="http://localhost:3005/{{products.productImagePath}}" id="main-product-img" alt="{{products.name}}">
         </div>
-        <div class="col-5 main-3-cards">
+        <div class="col-lg-5 col-md-6 col-sm-6 main-3-cards">
             <div class="row">
                 <div class="col-12">
                     <h3>{{products.name}}</h3>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-2 main-3-cards">
+        <div class="col-lg-2 col-md-12 col-sm-12 main-3-cards">
             <div class="row buy-card">
                 <div class="col-12">
                     <span>Quantity : 

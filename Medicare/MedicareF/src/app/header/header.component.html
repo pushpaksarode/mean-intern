@@ -46,28 +46,13 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item text-dark" href="#" *ngFor="let i of category">
-              <a routerLink="/cat/{{i._id}}">
+              <a id="categoryList"routerLink="/cat/{{i._id}}">
                 {{i.name}}
               </a>
             </a>
           </div>
         </li>
-
-
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Coronavirus Preventions
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-dark" href="#">Masks</a>
-            <a class="dropdown-item text-dark" href="#">Sanitizer</a>
-            <a class="dropdown-item text-dark" href="#">Handwashes</a>
-            <a class="dropdown-item text-dark" href="#">Boost Your Immunity</a>
-          </div> 
-        </li> -->
-
-
+        
         <li class="nav-item">
           <a class="nav-link text-white" routerLink="/services">Services</a>
         </li>
@@ -78,131 +63,55 @@
           <a class="nav-link text-white" routerLink="/contact-us">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" *ngIf="!session_set" routerLink="/login">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" *ngIf="!session_set" routerLink="/signup">Sign Up</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link text-white" *ngIf="session_set" routerLink="/myorder/{{userid}}">My Orders</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link text-white" *ngIf="session_set" (click)="logout()">Logout </a>
         </li>
 
       </ul>
-
-
-      <!-- Search Box -->
-      <!-- <form class="form-inline my-2 my-lg-0 topSearchBar">
-        <input class="form-control mr-sm-2 searchBox" type="search" placeholder="Search" aria-label="Search">
-        <button class="searchBtn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-      </form> -->
-
 
     </div>
   </nav>
 </div>
 
 
+<!-- small navbar -->
 
-<div class="noticebar">
-  <marquee width="100%" direction="left">Feel free to connect to us for any assistance or consulting during the lockdown
-    , Shipment may be delayed due to Covid-19 lockdown
-  </marquee>
-</div>
-
-
-<div class="controlBtn">
-
-  <div class="checkService navRightDiv">
-    <input class="form-control mr-sm-2 searchBox" type="text" name="pincode" id="pincode" placeholder="Pincode">
-    <button class="searchBtn">
-      <i class="fa fa-search" aria-hidden="true"></i>
-    </button>
+<div class="container-fluid">
+<div class="row smallNavbar">
+  <div class="col-lg-8">
+    <marquee width="100%" direction="left">Feel free to connect to us for any assistance or consulting during the
+      lockdown
+      , Shipment may be delayed due to Covid-19 lockdown
+    </marquee>
   </div>
-
-  <div class="myCart navRightDiv">
-    <a routerLink="/cart">
-      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    </a>
-  </div>
-
-
-  <!-- <div class="containerBtn navRightDiv">
-    <a *ngIf="!session_set" routerLink="/login"><button id="loginBtn" class="btn btn-sm">
-        Login
-      </button></a>
-    <span>|</span>
-    <a *ngIf="!session_set" routerLink="/signup"><button id="signupBtn" class="btn btn-sm">
-        Sign Up
-      </button></a>
- 
-    <a class="nav-link" *ngIf="session_set" routerLink="/main">Welcome {{username}}</a>
-    <a class="nav-link" *ngIf="session_set" (click)="logout()">Logout</a> 
-  </div> -->
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ----------------------------Code By Anuj Sir ------------------------- -->
-
-
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/main">
-          <img width="100px"  src="assets/company_logo.png" alt="">
-    My Shop
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" *ngIf="session_set" routerLink="/main">Welcome <strong>{{username}}</strong></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/main">Home <span class="sr-only">(current)</span></a>
-      </li>
-     
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category's
+  <div class="col-lg-4">
+    <div class="row">
+      <div class="col-lg-4 smallNavbarItems">
+        <a routerLink="/cart">
+          <img height="20px" width="20px" src="assets/shopping_cart.png" alt="shopping_cart">
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" *ngFor="let cat of category">{{cat.name}}</a>
-        
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" *ngIf="!session_set" routerLink="/login">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" *ngIf="!session_set" routerLink="/signup">Registration</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" *ngIf="session_set" (click)="logout()">Logout </a>
-      </li>
-     
-     
-    </ul>
-    
+      </div>
+      <div class="col-lg-4 smallNavbarItems" *ngIf="!session_set" >
+        <a class="loginsignup" routerLink="/login">
+          <!-- <button class="btn btn-sm"> -->
+            Login
+          
+        </a>
+      </div>
+      <div class="col-lg-4 smallNavbarItems" *ngIf="!session_set" >
+        <a class="loginsignup" routerLink="/signup">
+          <!-- <button class="btn btn-sm"> -->
+            Sign Up
+          <!-- </button> -->
+        </a>
+      </div>
+      <div class="col-lg-4 smallNavbarItems" *ngIf="session_set" >
+        <a class="loginsignup" (click)="logout()">
+          <!-- <button class="btn-sm"> -->
+            Logout
+          <!-- </button> -->
+        </a>
+      </div>
+    </div>
   </div>
-</nav> -->
+</div>
+</div>

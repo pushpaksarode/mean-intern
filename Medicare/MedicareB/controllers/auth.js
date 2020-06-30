@@ -43,7 +43,7 @@ exports.signin = (req, res) => {
           error: "Invalid Email and Password"
         });
       } 
-      const { _id,firstname,lastname, email } = user;
-      return res.json({  user: { _id, firstname, lastname, email } });
+      const { _id,firstname,lastname, email, address } = user;
+      return res.json({  user: { _id, firstname, lastname, email, address } });
     });
 };

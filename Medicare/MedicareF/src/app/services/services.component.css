@@ -7,15 +7,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding:30px;
 }
-.servicesCard{
-    background-color: rgb(194, 207, 207);
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    margin:10px 0px;
-    padding: 40px 20px;
-}
-.servicesCard h6{
-    text-align: center;
-    font-family: 'Odibee Sans', cursive;
+
+.container h2{
+    color: rgb(34, 49, 49);
+    font-family: monospace;
 }
